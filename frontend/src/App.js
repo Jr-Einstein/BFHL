@@ -4,7 +4,7 @@ import './App.css';
 
 function App() {
   const [inputData, setInputData] = useState('');
-  const [apiUrl, setApiUrl] = useState('http://localhost:3000/bfhl');
+  const [apiUrl, setApiUrl] = useState('https://bfhl-api-tester-ochre.vercel.app/bfhl');
   const [response, setResponse] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
