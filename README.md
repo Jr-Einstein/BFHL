@@ -17,6 +17,9 @@ This project consists of two main components:
 - ✅ Creates concatenated string with alternating case
 - ✅ Robust error handling and validation
 - ✅ CORS enabled for cross-origin requests
+- Curl Test Screenshot :
+  <img width="1365" height="104" alt="image" src="https://github.com/user-attachments/assets/498f07e7-f6bc-470b-873a-45591445e92e" />
+
 
 ### Frontend Application
 - ✅ Modern, responsive React interface
