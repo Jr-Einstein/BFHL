@@ -4,12 +4,8 @@ const cors = require('cors');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Enable CORS for your frontend URL only
-app.use(cors({
-    origin: 'https://bfhl-api-tester-frontend-dwaex1sjk.vercel.app', // <-- Replace with your frontend URL
-    methods: ['GET', 'POST'],
-    allowedHeaders: ['Content-Type']
-}));
+// ENABLE CORS FOR ALL ORIGINS (MOST POWERFUL FIX FOR VERCEL + EXPRESS)
+app.use(cors()); // <-- Universal solution. Handles preflight and all methods!
 
 // Middleware to parse JSON bodies
 app.use(express.json());
