@@ -19,6 +19,8 @@ This project consists of two main components:
 - ✅ CORS enabled for cross-origin requests
 - Curl Test Screenshot :
   <img width="1365" height="104" alt="image" src="https://github.com/user-attachments/assets/498f07e7-f6bc-470b-873a-45591445e92e" />
+- Postman API Testing :
+  <img width="1360" height="636" alt="image" src="https://github.com/user-attachments/assets/7072e052-2665-4963-acad-63aaf1c32363" />
 
 
 ### Frontend Application
