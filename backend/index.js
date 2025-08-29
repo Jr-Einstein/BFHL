@@ -4,15 +4,21 @@ const cors = require('cors');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Middleware
+// Enable CORS for your frontend URL only
+app.use(cors({
+    origin: 'https://bfhl-api-tester-frontend-dwaex1sjk.vercel.app', // <-- Replace with your frontend URL
+    methods: ['GET', 'POST'],
+    allowedHeaders: ['Content-Type']
+}));
+
+// Middleware to parse JSON bodies
 app.use(express.json());
-app.use(cors());
 
 // Personal details - Aman Kumar Singh
 const USER_DETAILS = {
     full_name: "aman_kumar_singh", // Name in lowercase
     dob: "04102004", // DOB in ddmmyyyy format (update with actual DOB)
-    email: "aman@example.com", // Update with actual email
+    email: "amankumarsingh.org@.com", // Update with actual email
     roll_number: "22BCY10258" // Roll number
 };
 
